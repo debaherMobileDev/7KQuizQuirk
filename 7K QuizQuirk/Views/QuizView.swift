@@ -83,6 +83,7 @@ struct QuizView: View {
                                     .font(.system(size: 14, weight: .semibold))
                                     .foregroundColor(.accentYellow)
                                     .textCase(.uppercase)
+                                    .tracking(1)
                                 
                                 Text(question.question)
                                     .font(.system(size: 24, weight: .bold))

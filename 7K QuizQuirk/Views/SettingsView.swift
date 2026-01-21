@@ -55,6 +55,7 @@ struct SettingsView: View {
                             .font(.system(size: 14, weight: .semibold))
                             .foregroundColor(.white.opacity(0.6))
                             .textCase(.uppercase)
+                            .tracking(1)
                             .padding(.horizontal, 20)
                             .padding(.bottom, 12)
                         
@@ -86,6 +87,7 @@ struct SettingsView: View {
                             .font(.system(size: 14, weight: .semibold))
                             .foregroundColor(.white.opacity(0.6))
                             .textCase(.uppercase)
+                            .tracking(1)
                             .padding(.horizontal, 20)
                             .padding(.bottom, 12)
                         
@@ -137,6 +139,7 @@ struct SettingsView: View {
                             .font(.system(size: 14, weight: .semibold))
                             .foregroundColor(.red.opacity(0.8))
                             .textCase(.uppercase)
+                            .tracking(1)
                             .padding(.horizontal, 20)
                             .padding(.bottom, 12)
                         

@@ -167,6 +167,7 @@ struct StatCard: View {
                 .font(.system(size: 13, weight: .medium))
                 .foregroundColor(.white.opacity(0.6))
                 .textCase(.uppercase)
+                .tracking(0.5)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(16)
