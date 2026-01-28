@@ -15,7 +15,7 @@ struct QuizView: View {
         ZStack {
             // Background gradient
             LinearGradient(
-                colors: [Color.backgroundDark, Color.backgroundRed, Color.backgroundDark],
+                colors: [Color("BackgroundDark"), Color("BackgroundRed"), Color("BackgroundDark")],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
@@ -44,7 +44,7 @@ struct QuizView: View {
                         
                         Text("Score: \(viewModel.score)")
                             .font(.system(size: 17, weight: .bold))
-                            .foregroundColor(.accentYellow)
+                            .foregroundColor(Color("AccentYellow"))
                     }
                     .padding(.horizontal, 20)
                     .padding(.top, 10)
@@ -81,7 +81,7 @@ struct QuizView: View {
                             VStack(alignment: .leading, spacing: 16) {
                                 Text("Question")
                                     .font(.system(size: 14, weight: .semibold))
-                                    .foregroundColor(.accentYellow)
+                                    .foregroundColor(Color("AccentYellow"))
                                     .textCase(.uppercase)
                                     .tracking(1)
                                 
@@ -148,7 +148,7 @@ struct QuizView: View {
                                 }) {
                                     Text(viewModel.currentQuestionIndex < (viewModel.currentQuiz?.questions.count ?? 1) - 1 ? "Next Question" : "Finish Quiz")
                                         .font(.system(size: 18, weight: .bold))
-                                        .foregroundColor(.backgroundDark)
+                                        .foregroundColor(Color("BackgroundDark"))
                                         .frame(maxWidth: .infinity)
                                         .padding()
                                         .background(

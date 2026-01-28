@@ -16,7 +16,7 @@ struct SettingsView: View {
         ZStack {
             // Background gradient
             LinearGradient(
-                colors: [Color.backgroundDark, Color.backgroundRed, Color.backgroundDark],
+                colors: [Color("BackgroundDark"), Color("BackgroundRed"), Color("BackgroundDark")],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
@@ -95,7 +95,7 @@ struct SettingsView: View {
                             SettingsRow(
                                 title: "Rate App",
                                 icon: "star.fill",
-                                iconColor: .accentYellow
+                                iconColor: Color("AccentYellow")
                             )
                             
                             Divider()
@@ -215,7 +215,7 @@ struct SettingsToggle: View {
             
             Toggle("", isOn: $isOn)
                 .labelsHidden()
-                .tint(.accentYellow)
+                .tint(Color("AccentYellow"))
         }
     }
 }

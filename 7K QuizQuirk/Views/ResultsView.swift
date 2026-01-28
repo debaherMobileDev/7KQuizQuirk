@@ -24,7 +24,7 @@ struct ResultsView: View {
         ZStack {
             // Background gradient
             LinearGradient(
-                colors: [Color.backgroundDark, Color.backgroundRed, Color.backgroundDark],
+                colors: [Color("BackgroundDark"), Color("BackgroundRed"), Color("BackgroundDark")],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
@@ -184,7 +184,7 @@ struct FilterChip: View {
         Button(action: action) {
             Text(title)
                 .font(.system(size: 14, weight: .semibold))
-                .foregroundColor(isSelected ? .backgroundDark : .white)
+                .foregroundColor(isSelected ? Color("BackgroundDark") : .white)
                 .padding(.horizontal, 16)
                 .padding(.vertical, 10)
                 .background(

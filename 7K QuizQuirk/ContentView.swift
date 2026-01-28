@@ -26,7 +26,7 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(
                         LinearGradient(
-                            colors: [Color.backgroundDark, Color.backgroundRed, Color.backgroundDark],
+                            colors: [Color("BackgroundDark"), Color("BackgroundRed"), Color("BackgroundDark")],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )

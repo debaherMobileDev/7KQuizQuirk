@@ -15,7 +15,7 @@ struct OnboardingView: View {
         ZStack {
             // Animated gradient background
             LinearGradient(
-                colors: [Color.backgroundDark, Color.backgroundRed, Color.backgroundDark],
+                colors: [Color("BackgroundDark"), Color("BackgroundRed"), Color("BackgroundDark")],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
@@ -69,7 +69,7 @@ struct OnboardingView: View {
                     }) {
                         Text(viewModel.isLastPage ? "Get Started" : "Next")
                             .font(.system(size: 17, weight: .bold))
-                            .foregroundColor(.backgroundDark)
+                            .foregroundColor(Color("BackgroundDark"))
                             .frame(maxWidth: .infinity)
                             .padding()
                             .background(

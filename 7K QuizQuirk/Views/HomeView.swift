@@ -19,7 +19,7 @@ struct HomeView: View {
             ZStack {
                 // Background gradient
                 LinearGradient(
-                    colors: [Color.backgroundDark, Color.backgroundRed, Color.backgroundDark],
+                    colors: [Color("BackgroundDark"), Color("BackgroundRed"), Color("BackgroundDark")],
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing
                 )
@@ -244,7 +244,7 @@ struct QuizCard: View {
                 HStack {
                     Image(systemName: quiz.category.icon)
                         .font(.system(size: 24))
-                        .foregroundColor(.accentYellow)
+                        .foregroundColor(Color("AccentYellow"))
                     
                     Spacer()
                     
@@ -289,7 +289,7 @@ struct QuizCard: View {
                         Image(systemName: "arrow.right.circle.fill")
                             .font(.system(size: 18))
                     }
-                    .foregroundColor(.accentYellow)
+                    .foregroundColor(Color("AccentYellow"))
                 }
             }
             .padding(20)
@@ -330,7 +330,7 @@ struct QuizCompletionView: View {
         ZStack {
             // Background gradient
             LinearGradient(
-                colors: [Color.backgroundDark, Color.backgroundRed, Color.backgroundDark],
+                colors: [Color("BackgroundDark"), Color("BackgroundRed"), Color("BackgroundDark")],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
@@ -369,7 +369,7 @@ struct QuizCompletionView: View {
                     
                     Text("\(viewModel.score)/\(viewModel.currentQuiz?.questions.count ?? 0)")
                         .font(.system(size: 60, weight: .bold))
-                        .foregroundColor(.accentYellow)
+                        .foregroundColor(Color("AccentYellow"))
                     
                     Text(String(format: "%.0f%%", scorePercentage))
                         .font(.system(size: 24, weight: .semibold))
@@ -388,7 +388,7 @@ struct QuizCompletionView: View {
                     }) {
                         Text("Try Again")
                             .font(.system(size: 18, weight: .bold))
-                            .foregroundColor(.backgroundDark)
+                            .foregroundColor(Color("BackgroundDark"))
                             .frame(maxWidth: .infinity)
                             .padding()
                             .background(

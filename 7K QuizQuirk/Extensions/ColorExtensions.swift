@@ -8,10 +8,6 @@
 import SwiftUI
 
 extension Color {
-    // Background Colors (not in asset catalog)
-    static let backgroundDark = Color(hex: "100D0E")
-    static let backgroundRed = Color(hex: "890818")
-    
     // Initialize from hex string
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
