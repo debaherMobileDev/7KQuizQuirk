@@ -28,14 +28,14 @@ struct SettingsView: View {
                     VStack(spacing: 16) {
                         Image(systemName: "brain.head.profile")
                             .font(.system(size: 80))
-                            .foregroundColor(.accentYellow)
+                            .foregroundColor(Color("AccentYellow"))
                             .padding(30)
                             .background(
                                 Circle()
                                     .fill(Color.white.opacity(0.1))
                                     .overlay(
                                         Circle()
-                                            .stroke(Color.accentYellow.opacity(0.3), lineWidth: 2)
+                                            .stroke(Color("AccentYellow").opacity(0.3), lineWidth: 2)
                                     )
                             )
                         
@@ -204,7 +204,7 @@ struct SettingsToggle: View {
         HStack {
             Image(systemName: icon)
                 .font(.system(size: 20))
-                .foregroundColor(.accentYellow)
+                .foregroundColor(Color("AccentYellow"))
                 .frame(width: 28)
             
             Text(title)

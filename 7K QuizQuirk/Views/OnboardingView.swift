@@ -26,7 +26,7 @@ struct OnboardingView: View {
                 HStack(spacing: 8) {
                     ForEach(0..<viewModel.pages.count, id: \.self) { index in
                         Circle()
-                            .fill(index == viewModel.currentPage ? Color.accentYellow : Color.white.opacity(0.3))
+                            .fill(index == viewModel.currentPage ? Color("AccentYellow") : Color.white.opacity(0.3))
                             .frame(width: 8, height: 8)
                             .animation(.spring(), value: viewModel.currentPage)
                     }
@@ -76,7 +76,7 @@ struct OnboardingView: View {
                                 RoundedRectangle(cornerRadius: 16)
                                     .fill(
                                         LinearGradient(
-                                            colors: [Color.accentYellow, Color.accentYellow.opacity(0.8)],
+                                            colors: [Color("AccentYellow"), Color("AccentYellow").opacity(0.8)],
                                             startPoint: .leading,
                                             endPoint: .trailing
                                         )

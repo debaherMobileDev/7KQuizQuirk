@@ -44,14 +44,14 @@ struct ResultsView: View {
                                 title: "Quizzes",
                                 value: "\(stats.totalQuizzesTaken)",
                                 icon: "list.clipboard.fill",
-                                color: Color.accentYellow
+                                color: Color("AccentYellow")
                             )
                             
                             StatCard(
                                 title: "Accuracy",
                                 value: String(format: "%.1f%%", stats.accuracy),
                                 icon: "target",
-                                color: Color.primaryRed
+                                color: Color("PrimaryRed")
                             )
                         }
                         
@@ -189,7 +189,7 @@ struct FilterChip: View {
                 .padding(.vertical, 10)
                 .background(
                     RoundedRectangle(cornerRadius: 20)
-                        .fill(isSelected ? Color.accentYellow : Color.white.opacity(0.1))
+                        .fill(isSelected ? Color("AccentYellow") : Color.white.opacity(0.1))
                 )
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)

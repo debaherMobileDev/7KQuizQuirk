@@ -49,7 +49,7 @@ struct HomeView: View {
                                 QuickStatCard(
                                     icon: "chart.bar.fill",
                                     title: "Results",
-                                    color: Color.accentYellow
+                                    color: Color("AccentYellow")
                                 )
                             }
                             
@@ -59,7 +59,7 @@ struct HomeView: View {
                                 QuickStatCard(
                                     icon: "gearshape.fill",
                                     title: "Settings",
-                                    color: Color.primaryRed
+                                    color: Color("PrimaryRed")
                                 )
                             }
                         }
@@ -395,7 +395,7 @@ struct QuizCompletionView: View {
                                 RoundedRectangle(cornerRadius: 16)
                                     .fill(
                                         LinearGradient(
-                                            colors: [Color.accentYellow, Color.accentYellow.opacity(0.8)],
+                                            colors: [Color("AccentYellow"), Color("AccentYellow").opacity(0.8)],
                                             startPoint: .leading,
                                             endPoint: .trailing
                                         )

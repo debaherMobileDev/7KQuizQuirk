@@ -59,7 +59,7 @@ struct QuizView: View {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(
                                     LinearGradient(
-                                        colors: [Color.accentYellow, Color.primaryRed],
+                                        colors: [Color("AccentYellow"), Color("PrimaryRed")],
                                         startPoint: .leading,
                                         endPoint: .trailing
                                     )
@@ -155,7 +155,7 @@ struct QuizView: View {
                                             RoundedRectangle(cornerRadius: 16)
                                                 .fill(
                                                     LinearGradient(
-                                                        colors: [Color.accentYellow, Color.accentYellow.opacity(0.8)],
+                                                        colors: [Color("AccentYellow"), Color("AccentYellow").opacity(0.8)],
                                                         startPoint: .leading,
                                                         endPoint: .trailing
                                                     )
@@ -191,7 +191,7 @@ struct AnswerButton: View {
                 return Color.red.opacity(0.3)
             }
         } else if isSelected {
-            return Color.accentYellow.opacity(0.2)
+            return Color("AccentYellow").opacity(0.2)
         }
         return Color.white.opacity(0.08)
     }
@@ -204,7 +204,7 @@ struct AnswerButton: View {
                 return Color.red
             }
         } else if isSelected {
-            return Color.accentYellow
+            return Color("AccentYellow")
         }
         return Color.white.opacity(0.15)
     }
